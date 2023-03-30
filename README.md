@@ -1,4 +1,4 @@
-Ricardo's Branch The 
+Ricardo's Branch 
 
 <!-- # Getting Started with Create React App
 
