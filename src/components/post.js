@@ -1,7 +1,9 @@
 import React from 'react'
 const Post = (props) => {
     return (
-        <div></div>
+        <div>
+            {/* post content data will be organized here i.e. props.data.imageURL etc. */}
+        </div>
     )
 }
 
