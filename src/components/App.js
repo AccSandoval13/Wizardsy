@@ -1,8 +1,8 @@
 //Import data to make sure all components are connected
-import NavBar from './components/NavBar';
-import Gallery from './components/gallery';
-import Post from './components/post';
-import Footer from './components/footer';
+import NavBar from './NavBar';
+import Gallery from './gallery';
+import Post from './post';
+import Footer from './footer';
 import './App.css';
 
 function App() {
@@ -11,6 +11,9 @@ function App() {
       <NavBar/>
       <Gallery/>
       <Footer/>
+      <div className="App">
+        {}
+      </div>
     </div>
   );
 }
