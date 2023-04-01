@@ -1,0 +1,10 @@
+.App{
+  background-color: #f8faf8;
+}
+.header{
+  flex-direction: row;
+}
+.left_header>img{
+  width: 100px;
+  height: 100px;
+}
