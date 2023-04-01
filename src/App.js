@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="left_header">
-          <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="wizard hat icons" />
+          <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="Wizardsy Logo" />
         </div>
         <NavBar/>
       </div>
