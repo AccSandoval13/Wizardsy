@@ -1,6 +1,8 @@
 Wizardsy: 
 
-A web application that allows users to share and discover images related to happiness, similar to Pinterest, users can create boards and save images to them, as well as follow other users and their boards
+A web application that allows users to share and discover images related to happiness and love similar to Pinterest, users can create boards and save images to them, as well as follow other users and their boards
+
+=======
 
 Features: 
 User authentication and authorization
@@ -9,6 +11,7 @@ Create, view, and edit boards
 Upload, view, and delete images
 Follow and unfollow users and boards
 
+=======
 
 Built with the following technologies:
 React.js for the front-end
