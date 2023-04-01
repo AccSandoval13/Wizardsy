@@ -1,6 +1,6 @@
 //Import data to make sure all components are connected
 import logo from './assests/wizard-hat.png'
-
+import NavBar from './components/NavBar'
 import './App.css';
 
 function App() {
