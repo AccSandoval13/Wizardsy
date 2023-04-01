@@ -2,7 +2,6 @@
 import NavBar from './NavBar';
 import Gallery from './gallery';
 import Post from './post';
-import Footer from './footer';
 import './App.css';
 
 function App() {
