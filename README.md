@@ -21,3 +21,6 @@ Cloudinary for image storage and management
 JWT for user authentication and authorization
 Axios for API requests
 Material-UI for UI components
+
+=======
+Wizard hat icons created by manshagraphics Flaticon

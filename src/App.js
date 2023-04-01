@@ -10,8 +10,6 @@ function App() {
       <div className="header">
         <div className="left_header">
           <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="wizard hat icons" />
-          
-          <p>Wizard hat icons created by manshagraphics Flaticon</p>
         </div>
         <NavBar/>
       </div>
