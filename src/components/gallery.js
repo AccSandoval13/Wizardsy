@@ -5,7 +5,11 @@ const wizardsyPost = require('./content')
 const Gallery = () => {
     return (
         <div>
-            {/* Post Layout i.e. (data, i) => etc... */}
+           {
+            wizardsyPost.content.map((data,i) => {
+                return <Post data= {data} key = {i}/>
+            })
+           }
         </div>
     )
 }
