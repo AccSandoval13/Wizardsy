@@ -1,7 +1,7 @@
 //Import data to make sure all components are connected
 import logo from './wizard-hat.png'
 
-import NavBar from './components/navBar';
+import NavBar from './components/NavBar';
 import Gallery from './components/gallery';
 
 import './App.css';
