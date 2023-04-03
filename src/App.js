@@ -1,7 +1,9 @@
 //Import data to make sure all components are connected
 import logo from './assests/wizard-hat.png'
 
-import NavBar from './components/NavBar';
+import NavBar from './components/navBar';
+import Gallery from './components/gallery';
+
 import './App.css';
 
 function App() {
@@ -9,11 +11,10 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="left_header">
-          <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="wizard hat icons" />
-          
-          <p>Wizard hat icons created by manshagraphics Flaticon</p>
+          <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="Wizardsy Logo" />
+          <NavBar/>
         </div>
-        <NavBar/>
+        <Gallery/>
       </div>
     </div>
   );
