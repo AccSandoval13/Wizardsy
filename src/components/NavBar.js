@@ -1,11 +1,13 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
+import logo from '../wizard-hat.png'
+
 const navBar= () =>{
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+    <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="Wizardsy Logo"/>
     <a class="navbar-brand" href="#">Home</a>
-    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""/>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
