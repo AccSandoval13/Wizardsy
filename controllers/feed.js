@@ -4,6 +4,8 @@ const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb+srv://UserWiz:UserPassword@wizcluster.23xxeul.mongodb.net';
 const User = require ('./models/user'); 
 
+const router = express.Router()
+
 
 // Importing Database and Collection From MongoDB 
 const usersDB = 'users'; 
@@ -47,3 +49,42 @@ MongoClient.connect(url)
       });
   })
 
+ 
+//Routes
+
+//Home
+  
+  router.get('/', (req, res) => {
+    res.render('/', { home })
+          })
+          .catch(err => {
+              console.log('err', err)
+              res.render('error404')
+          })
+//About
+  
+          router.get('/about', (req, res) => {
+            res.render('/about', { about })
+                  })
+                  .catch(err => {
+                      console.log('err', err)
+                      res.render('error404')
+                  })
+//Today
+                  router.get('/today', (req, res) => {
+                    res.render('/today', { today })
+                          })
+                          .catch(err => {
+                              console.log('err', err)
+                              res.render('error404')
+                          })
+//Create
+router.get('/create', (req, res) => {
+  res.render('/create', { create })
+        })
+        .catch(err => {
+            console.log('err', err)
+            res.render('error404')
+        })
+
+        module.exports = router;
