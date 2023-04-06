@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Creating a router 
 const mongoose = require('mongoose'); 
 const MongoClient = require('mongodb').MongoClient;
@@ -47,8 +48,16 @@ MongoClient.connect(url)
         console.log('Error Inserting User:', err);
         client.close();
       });
+=======
+router.get ('/', function (req, res){
+    res.render('/home', { home })
+>>>>>>> main
   })
+  .catch(err => {
+    res.render('error404')
+})
 
+<<<<<<< HEAD
  
 //Routes
 
@@ -99,3 +108,6 @@ router.get('/create', (req, res) => {
   })
 
   module.exports = feed;
+=======
+module.exports = feed;
+>>>>>>> main
