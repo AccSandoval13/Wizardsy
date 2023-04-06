@@ -23,5 +23,13 @@ Axios for API requests
 Material-UI for UI components
 
 =======
+
+In the Front-End we are using react router DOM to handle routing and react hooks to manage state and side effects 
+
+
+In the Back-End we are using express to handle requests and responses, mongoose to interact with the database, and jsonwebtoken to handle authentication and authorization 
+
+======= 
+
 Wizard hat icons created by manshagraphics Flaticon
 
