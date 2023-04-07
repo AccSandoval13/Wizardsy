@@ -14,4 +14,4 @@ function home () {
         </Def>
     )
 }
-module.exports = home
+module.exports =home
