@@ -5,9 +5,11 @@ function home () {
     return (
         <Def>
             <main>
-                <Gallery>
+                <div>
+                    <Gallery>
 
-                </Gallery>
+                    </Gallery>
+                </div>
             </main>
         </Def>
     )
