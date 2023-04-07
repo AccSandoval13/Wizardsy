@@ -7,12 +7,15 @@ const db = require('../models')
 //Home
   
   router.get('/', (req, res) => {
-    res.render('/', { home })
-          })
+      db.Post.find()
+        .then((post) => {
+          res.render('places/index', { home })
+        })
           .catch(err => {
               console.log('err', err)
               res.render('error404')
           })
+    })
 //About
   
           router.get('/about', (req, res) => {
