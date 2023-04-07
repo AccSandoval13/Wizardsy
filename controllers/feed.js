@@ -1,3 +1,4 @@
+
 const router = require('express').Router()
 const db = require('../models')
 
@@ -50,3 +51,13 @@ router.get('/create', (req, res) => {
   })
 
   module.exports = feed;
+
+router.get ('/', function (req, res){
+  res.render('/home', { home })
+  })
+  .catch(err => {
+    res.render('error404')
+  })
+
+
+
