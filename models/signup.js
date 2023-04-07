@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connecting to the MongoDB database 
+// Wrapped our MongoDB connection with IIFE (Immediately Invoked Function Expression)
 (async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI, {
