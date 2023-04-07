@@ -1,4 +1,5 @@
 const React = require('react')
+const logo = require('../src/wizard-hat.png')
 
 function Def (html) {
     return (
