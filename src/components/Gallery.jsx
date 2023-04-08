@@ -1,10 +1,18 @@
-import React from 'react';
-import MyComponent from './Content'; // Import MyComponent component
+import React from "react";
 
-function Gallery() {
+function Gallery(props) {
+  const { photos } = props;
+
   return (
-    <div>
-      <MyComponent />
+    <div className="gallery">
+      {photos.map((photo) => (
+        <img
+          key={photo.id}
+          src={photo.urls.regular}
+          alt={photo.alt_description}
+          className="gallery__image"
+        />
+      ))}
     </div>
   );
 }

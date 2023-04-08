@@ -1,26 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../wizard-hat.png';
-import './NavBar.css';
 import { useDispatch } from 'react-redux';
-import store from '../store/store';
-
-
-
-
+import '../App.css';
+// import SignUp from './SignUp';
 
 function NavBar() {
-  const dispatch = useDispatch();
-
-  function handleCreateClick() {
-    dispatch(showSignup());
-  }
 
   return (
-    <nav className="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div className="navbar-left">
-        <img src={logo} alt="https://www.flaticon.com/free-icons/wizard-hat" title="Wizardsy Logo" />
-        <Link className="navbar-brand" to="/">Home</Link>
+        <span class="navbar-toggler-icon"></span>
+        <img src={logo} title="Wizardsy Logo" width="30" height="30" class="d-inline-block align-top"/>
+        <Link className="navbar-brand" to="/">Home </Link>
       </div>
       <div className="navbar-right">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -38,7 +30,7 @@ function NavBar() {
 
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><button className="dropdown-item" type="button">Today</button></li>
-              <li><button className="dropdown-item" type="button" onClick={handleCreateClick}>Sign Up</button></li>
+              <li><button className="dropdown-item" type="button"> Sign Up</button></li>
               <li><hr className="dropdown-divider" /></li>
               <li><button className="dropdown-item" type="button">Something else here</button></li>
             </ul>
@@ -53,4 +45,18 @@ function NavBar() {
   );
 }
 
+export const navForm = ({ text, style, _onClick }) => {
+  const _onClickHandler = (event) => {
+      event.preventDefault();
+      _onClick?.(event);
+  };
+
+  return (
+      <button {...style}>
+          <Link href='#' onClick={_onClickHandler}>
+              {text}
+          </Link>
+      </button>
+  );
+};
 export default NavBar;
