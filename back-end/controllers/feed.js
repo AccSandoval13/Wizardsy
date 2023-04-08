@@ -1,11 +1,10 @@
-
 const router = require('express').Router()
 const db = require('../../front-end/models')
 const index = require('../views/index') 
 
 
 //Home
-  
+
   router.get('/', (req, res) => {
       db.Post.find()
         .then((post) => {
@@ -17,7 +16,7 @@ const index = require('../views/index')
           })
     })
 //About
-  
+
           router.get('/about', (req, res) => {
             res.render('/about', { about })
                   })
@@ -61,6 +60,3 @@ router.get ('/', function (req, res){
   .catch(err => {
     res.render('error404')
   })
-
-
-
