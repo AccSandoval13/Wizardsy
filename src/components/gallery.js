@@ -7,7 +7,7 @@ const Gallery = () => {
         <div>
            {
             wizardsyPost.content.map((data,i) => {
-                return <Post data= {data} key = {i}/>
+                return <Post data= {data} key = {i} />
             })
            }
         </div>

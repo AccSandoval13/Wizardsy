@@ -1,6 +1,6 @@
 //Import data to make sure all components are connected
 import NavBar from './components/NavBar';
-// import Gallery from '../Gallery'; 
+import Gallery from './components/Gallery'
 
 
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="header">
           <NavBar/>
-          {/* <Gallery/> */}
+          <Gallery/>
       </div>
     </div>
   );
