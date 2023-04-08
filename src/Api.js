@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchPhotos = (accessKey) => {
   return axios
     .get(
-      `https://api.unsplash.com/photos/random?count=10&client_id=${accessKey}`
+      `https://api.unsplash.com/photos/random?count=12&client_id=${accessKey}`
     )
     .then((response) => {
       const photos = response.data.map((photo) => ({
