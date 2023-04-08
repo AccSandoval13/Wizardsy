@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from '../../../src1/components1/post'
+import Post from './post' 
 const wizardsyPost = require('./content')
 
 const Gallery = () => {
