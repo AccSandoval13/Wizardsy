@@ -32,4 +32,7 @@ function Signup() {
       </label>
       <label>
         Password:
-        <input type="password" value={password} onChange={(e)
+        <input type="password" value={password} onChange={(e)}/>
+      </label>
+     </form>   
+  )}
